@@ -1,1 +1,84 @@
-site_name: My Docs
+# MkDocs.yml
+# The YAML configuration file defines the settings
+# for the entire site, including where pages are found, layout, markdown extensions,
+# plugins, additional css and javascript, and much more
+#
+# The configuration parameters listed below are some examples and explainations of
+# what can be set, but is not all-encompassing. Please see the MkDocs online user
+# guide for a full breakdown of configuration
+
+# Site Config
+site_name: MkDocs Demo 
+site_description: 'MKDocs custom template' 
+site_author: 'Carlos Palavecino'
+docs_dir: docs
+site_dir: site
+copyright: 2021 | Carlos Palavecino
+# favicon: images/favicon.png
+
+# GitHub Config
+repo_name: 'Github'
+repo_url: https://github.com/carlospalavecino/mkdocs
+edit_uri: edit/main/docs/ 
+
+# Theme Config
+theme: 
+  language: es
+  name: material
+  font:
+    text: Lato
+    code: Source Code Pro
+  palette:
+    scheme: custom
+#  logo: assets/logo.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+#    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexe
+    - navigation.top
+    - content.code.annotate
+    - content.tabs.link
+
+# Extra CSS
+extra_css:
+  - css/onedark_colors.css
+  - css/extra.css
+
+# Markdown Config
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+# Extra Config
+extra:
+  generator: false
+#  homepage: https://example.com
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/carlospalavecino
+      name: squidfunk on Twitter
+    - icon: fontawesome/brands/hackerrank
+      link: https://www.hackerrank.com/carlospalavecino
+    - icon: fontawesome/brands/behance
+      link: https://behance.net/CarlosPalavecino
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/carlospalavecino/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ch4rlypal
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/ch4rlypal
+# Plugins 
+plugins:
+  - search
+  - autolinks
