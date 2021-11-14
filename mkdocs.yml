@@ -29,7 +29,7 @@ theme:
     text: Lato
     code: Source Code Pro
   palette:
-    scheme: custom
+    scheme: MaterialOneDarkCustom
 #  logo: assets/logo.png
   icon:
     repo: fontawesome/brands/github
