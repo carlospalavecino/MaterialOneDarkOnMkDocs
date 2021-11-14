@@ -8,9 +8,9 @@
 # guide for a full breakdown of configuration
 
 # Site Config
-site_name: MkDocs Demo 
-site_description: 'MKDocs custom template' 
-site_author: 'Carlos Palavecino'
+site_name: Material for MkDocs + OneDark Color | template 
+site_description: Material for MkDocs + OneDark Color template
+site_author: Carlos Palavecino
 docs_dir: docs
 site_dir: site
 copyright: 2021 | Carlos Palavecino
@@ -20,6 +20,11 @@ copyright: 2021 | Carlos Palavecino
 repo_name: 'Github'
 repo_url: https://github.com/carlospalavecino/mkdocs
 edit_uri: edit/main/docs/ 
+
+# Menu Config
+nav:
+    - Home: index.md
+    - Content Demo: content-demo.md
 
 # Theme Config
 theme: 
