@@ -3,6 +3,16 @@ This is an implementation of MkDocs with the Material theme and OneDark color pa
 
 Feel free to share, modify or use it on your own projects.
 
+## Preview 
+
+[Material + OneDark on MkDocs online preview](https://carlospalavecino.github.io/MaterialOneDarkOnMkDocs/)
+
+![screenshoot](img\screenshoot.jpg)
+
+## OneDark Palette
+
+![OneDarkPalette](img/palette.jpg)
+
 ## Layout
 
 ```bash
@@ -20,23 +30,33 @@ docs/
 ```
 ## Configuration
 ``` yaml title="mkdocks.yml"
-site_name: MkDocsDemo 
-site_description: Material for MkDocs + OneDark Color template
-site_author: Author
+# MkDocs.yml
+# The YAML configuration file defines the settings
+# for the entire site, including where pages are found, layout, markdown extensions,
+# plugins, additional css and javascript, and much more
+#
+# The configuration parameters listed below are some examples and explainations of
+# what can be set, but is not all-encompassing. Please see the MkDocs online user
+# guide for a full breakdown of configuration
+
+# Site Config
+site_name: Material + OneDark on MkDocs 
+site_description: A base template with Material theme and OneDark Palette for MkDocs
+site_author: Carlos Palavecino
 docs_dir: docs
 site_dir: site
-copyright: 2021(c)
-favicon: img/favicon.png
+copyright: 2021 | Carlos Palavecino
+# favicon: images/favicon.png
 
 # GitHub Config
 repo_name: 'Github'
-repo_url: https://github.com/user/repo
+repo_url: https://github.com/carlospalavecino/MaterialOneDarkOnMkDocs
 edit_uri: edit/main/docs/ 
 
 # Menu Config
 nav:
-    - Home: index.md
-    - link: file.md
+  - Home: index.md
+  - Content Demo: content-demo.md
 
 # Theme Config
 theme: 
@@ -47,7 +67,7 @@ theme:
     code: Source Code Pro
   palette:
     scheme: MaterialOneDarkCustom
-  logo: img/logo.png
+#  logo: docs/img/logo.png
   icon:
     repo: fontawesome/brands/github
   features:
@@ -62,12 +82,12 @@ theme:
 
 # Extra CSS
 extra_css:
-  - css/onedark_colors.css
   - css/extra.css
 
 # Markdown Config
 markdown_extensions:
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.snippets
@@ -82,20 +102,21 @@ markdown_extensions:
 # Extra Config
 extra:
   generator: false
-  homepage: https://example.com
+#  homepage: https://example.com
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/
+      link: https://github.com/carlospalavecino
+      name: squidfunk on Twitter
     - icon: fontawesome/brands/hackerrank
-      link: https://www.hackerrank.com
+      link: https://www.hackerrank.com/carlospalavecino
     - icon: fontawesome/brands/behance
-      link: https://behance.net
+      link: https://behance.net/CarlosPalavecino
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com
+      link: https://www.linkedin.com/in/carlospalavecino/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com
+      link: https://twitter.com/ch4rlypal
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com
+      link: https://instagram.com/ch4rlypal
 # Plugins 
 plugins:
   - search
@@ -131,17 +152,6 @@ _This is italic text_
 > > > ...or with spaces between arrows.
 
 ### Lists
-
-#### TaskList
-
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
-
-
 
 #### Unordered
 
@@ -275,7 +285,7 @@ def bubble_sort(items):
 - H~2~O
 
 
-### [Mark Text <mark>](https://github.com/markdown-it/markdown-it-mark)
+### [Mark Text <mark>Mark</mark>](https://github.com/markdown-it/markdown-it-mark)
 
 ==Marked text==
 
