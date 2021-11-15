@@ -9,7 +9,7 @@
 
 # Site Config
 site_name: Material + OneDark on MkDocs 
-site_description: A base template wit Material for MkDocs and OneDark Palette for MkDocs
+site_description: A base template with Material theme and OneDark Palette for MkDocs
 site_author: Carlos Palavecino
 docs_dir: docs
 site_dir: site
