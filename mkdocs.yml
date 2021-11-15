@@ -8,8 +8,8 @@
 # guide for a full breakdown of configuration
 
 # Site Config
-site_name: Material for MkDocs + OneDark Color | template 
-site_description: Material for MkDocs + OneDark Color template
+site_name: Material + OneDark on MkDocs 
+site_description: A base template wit Material for MkDocs and OneDark Palette for MkDocs
 site_author: Carlos Palavecino
 docs_dir: docs
 site_dir: site
@@ -18,13 +18,13 @@ copyright: 2021 | Carlos Palavecino
 
 # GitHub Config
 repo_name: 'Github'
-repo_url: https://github.com/carlospalavecino/mkdocs
+repo_url: https://github.com/carlospalavecino/MaterialOneDarkOnMkDocs
 edit_uri: edit/main/docs/ 
 
 # Menu Config
 nav:
-    - Home: index.md
-    - Content Demo: content-demo.md
+  - Home: index.md
+  - Content Demo: content-demo.md
 
 # Theme Config
 theme: 
@@ -50,12 +50,12 @@ theme:
 
 # Extra CSS
 extra_css:
-  - css/onedark_colors.css
   - css/extra.css
 
 # Markdown Config
 markdown_extensions:
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.snippets
