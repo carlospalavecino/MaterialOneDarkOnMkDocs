@@ -7,7 +7,7 @@ Feel free to share, modify or use it on your own projects.
 
 [Material + OneDark on MkDocs online preview](https://carlospalavecino.github.io/MaterialOneDarkOnMkDocs/)
 
-![screenshoot](docs\img\screenshoot.jpg)
+![screenshoot](docs/img/screenshoot.jpg)
 
 ## OneDark Palette
 
