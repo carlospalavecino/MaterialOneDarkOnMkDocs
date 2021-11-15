@@ -249,6 +249,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#preview" class="md-nav__link">
+    Preview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onedark-palette" class="md-nav__link">
+    OneDark Palette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#layout" class="md-nav__link">
     Layout
   </a>
@@ -344,13 +358,6 @@
   
     <nav class="md-nav" aria-label="Lists">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tasklist" class="md-nav__link">
-    TaskList
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#unordered" class="md-nav__link">
@@ -475,8 +482,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mark-text" class="md-nav__link">
-    Mark Text 
+  <a href="#mark-text-mark" class="md-nav__link">
+    Mark Text Mark
   </a>
   
 </li>
@@ -544,6 +551,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#preview" class="md-nav__link">
+    Preview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onedark-palette" class="md-nav__link">
+    OneDark Palette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#layout" class="md-nav__link">
     Layout
   </a>
@@ -639,13 +660,6 @@
   
     <nav class="md-nav" aria-label="Lists">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tasklist" class="md-nav__link">
-    TaskList
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#unordered" class="md-nav__link">
@@ -770,8 +784,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mark-text" class="md-nav__link">
-    Mark Text 
+  <a href="#mark-text-mark" class="md-nav__link">
+    Mark Text Mark
   </a>
   
 </li>
@@ -808,6 +822,11 @@
                 <h1 id="material-for-mkdocs-onedark-color-template">Material for MkDocs + OneDark Color template</h1>
 <p>This is an implementation of MkDocs with the Material theme and OneDark color palette pre-configured and ready to use as a documentation base.</p>
 <p>Feel free to share, modify or use it on your own projects.</p>
+<h2 id="preview">Preview</h2>
+<p><a href="https://carlospalavecino.github.io/MaterialOneDarkOnMkDocs/">Material + OneDark on MkDocs online preview</a></p>
+<p><img alt="screenshoot" src="img/screenshoot.jpg" /></p>
+<h2 id="onedark-palette">OneDark Palette</h2>
+<p><img alt="OneDarkPalette" src="img/palette.jpg" /></p>
 <h2 id="layout">Layout</h2>
 <div class="highlight"><pre><span></span><code>mkdocs.yml    <span class="c1"># The custom configuration file.</span>
 docs/
@@ -820,23 +839,33 @@ docs/
 <div class="highlight"><pre><span></span><code>// TODO: Install
 </code></pre></div>
 <h2 id="configuration">Configuration</h2>
-<div class="highlight"><span class="filename">mkdocks.yml</span><pre><span></span><code><span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">MkDocsDemo</span> 
-<span class="nt">site_description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Material for MkDocs + OneDark Color template</span>
-<span class="nt">site_author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Author</span>
+<div class="highlight"><span class="filename">mkdocks.yml</span><pre><span></span><code><span class="c1"># MkDocs.yml</span>
+<span class="c1"># The YAML configuration file defines the settings</span>
+<span class="c1"># for the entire site, including where pages are found, layout, markdown extensions,</span>
+<span class="c1"># plugins, additional css and javascript, and much more</span>
+<span class="c1">#</span>
+<span class="c1"># The configuration parameters listed below are some examples and explainations of</span>
+<span class="c1"># what can be set, but is not all-encompassing. Please see the MkDocs online user</span>
+<span class="c1"># guide for a full breakdown of configuration</span>
+
+<span class="c1"># Site Config</span>
+<span class="nt">site_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Material + OneDark on MkDocs</span> 
+<span class="nt">site_description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">A base template with Material theme and OneDark Palette for MkDocs</span>
+<span class="nt">site_author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Carlos Palavecino</span>
 <span class="nt">docs_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">docs</span>
 <span class="nt">site_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">site</span>
-<span class="nt">copyright</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021(c)</span>
-<span class="nt">favicon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">img/favicon.png</span>
+<span class="nt">copyright</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2021 | Carlos Palavecino</span>
+<span class="c1"># favicon: images/favicon.png</span>
 
 <span class="c1"># GitHub Config</span>
 <span class="nt">repo_name</span><span class="p">:</span> <span class="s">&#39;Github&#39;</span>
-<span class="nt">repo_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/user/repo</span>
+<span class="nt">repo_url</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/carlospalavecino/MaterialOneDarkOnMkDocs</span>
 <span class="nt">edit_uri</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">edit/main/docs/</span> 
 
 <span class="c1"># Menu Config</span>
 <span class="nt">nav</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
-    <span class="p p-Indicator">-</span> <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">file.md</span>
+  <span class="p p-Indicator">-</span> <span class="nt">Home</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+  <span class="p p-Indicator">-</span> <span class="nt">Content Demo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">content-demo.md</span>
 
 <span class="c1"># Theme Config</span>
 <span class="nt">theme</span><span class="p">:</span> 
@@ -847,7 +876,7 @@ docs/
     <span class="nt">code</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Source Code Pro</span>
   <span class="nt">palette</span><span class="p">:</span>
     <span class="nt">scheme</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">MaterialOneDarkCustom</span>
-  <span class="nt">logo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">img/logo.png</span>
+<span class="c1">#  logo: docs/img/logo.png</span>
   <span class="nt">icon</span><span class="p">:</span>
     <span class="nt">repo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/github</span>
   <span class="nt">features</span><span class="p">:</span>
@@ -862,12 +891,12 @@ docs/
 
 <span class="c1"># Extra CSS</span>
 <span class="nt">extra_css</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/onedark_colors.css</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">css/extra.css</span>
 
 <span class="c1"># Markdown Config</span>
 <span class="nt">markdown_extensions</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.highlight</span>
+  <span class="p p-Indicator">-</span> <span class="nt">pymdownx.highlight</span><span class="p">:</span>
+      <span class="nt">use_pygments</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.snippets</span>
@@ -882,20 +911,21 @@ docs/
 <span class="c1"># Extra Config</span>
 <span class="nt">extra</span><span class="p">:</span>
   <span class="nt">generator</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-  <span class="nt">homepage</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://example.com</span>
+<span class="c1">#  homepage: https://example.com</span>
   <span class="nt">social</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="nt">icon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/github</span>
-      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/carlospalavecino</span>
+      <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">squidfunk on Twitter</span>
     <span class="p p-Indicator">-</span> <span class="nt">icon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/hackerrank</span>
-      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://www.hackerrank.com</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://www.hackerrank.com/carlospalavecino</span>
     <span class="p p-Indicator">-</span> <span class="nt">icon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/behance</span>
-      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://behance.net</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://behance.net/CarlosPalavecino</span>
     <span class="p p-Indicator">-</span> <span class="nt">icon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/linkedin</span>
-      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://www.linkedin.com</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://www.linkedin.com/in/carlospalavecino/</span>
     <span class="p p-Indicator">-</span> <span class="nt">icon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/twitter</span>
-      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://twitter.com</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://twitter.com/ch4rlypal</span>
     <span class="p p-Indicator">-</span> <span class="nt">icon</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome/brands/instagram</span>
-      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://instagram.com</span>
+      <span class="nt">link</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://instagram.com/ch4rlypal</span>
 <span class="c1"># Plugins </span>
 <span class="nt">plugins</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">search</span>
@@ -923,17 +953,6 @@ docs/
 </blockquote>
 </blockquote>
 <h3 id="lists">Lists</h3>
-<h4 id="tasklist">TaskList</h4>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vestibulum convallis sit amet nisi a tincidunt<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In hac habitasse platea dictumst</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In scelerisque nibh non dolor mollis congue sed et metus</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Praesent sed risus massa</li>
-</ul>
-</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque</li>
-</ul>
 <h4 id="unordered">Unordered</h4>
 <ul>
 <li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
@@ -1076,7 +1095,7 @@ line 3 of code
 <li>19<sup>th</sup></li>
 <li>H<sub>2</sub>O</li>
 </ul>
-<h3 id="mark-text"><a href="https://github.com/markdown-it/markdown-it-mark">Mark Text <mark></a></h3>
+<h3 id="mark-text-mark"><a href="https://github.com/markdown-it/markdown-it-mark">Mark Text <mark>Mark</mark></a></h3>
 <p><mark>Marked text</mark></p>
 <h2 id="more-information">More information</h2>
 <ul>
