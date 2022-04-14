@@ -1,7 +1,17 @@
 # Material for MkDocs + OneDark Color template
+
 This is an implementation of MkDocs with the Material theme and OneDark color palette pre-configured and ready to use as a documentation base.
 
 Feel free to share, modify or use it on your own projects.
+
+``` bash
+mkdocs new my-project # Create project
+pip install mkdocs-material # install material theme
+pip install mkdocs-autolinks-plugin # autolinks plugin
+mkdocs serve # live preview
+mkdocs build # build site
+mkdocs gh-deploy # Deploy GitHub Pages
+```
 
 ## Preview 
 
